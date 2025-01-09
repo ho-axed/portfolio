@@ -587,3 +587,105 @@ html {
   border-radius: 0.5rem;
   color: #fff;
 }
+.parentMain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainCont {
+  background: linear-gradient(360deg, #293b51, #0d1017);
+  background-color: #293b51;
+  height: 33rem;
+  /* display: flex; */
+  width: 45rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.bentoComp {
+  background-color: #325072;
+  padding: 0.5rem;
+  z-index: 99;
+  position: relative;
+  color: #fff;
+}
+#who {
+  border-radius: 1rem;
+  width: 28rem;
+  height: 10rem;
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
+#technologies {
+  width: 15rem;
+  text-align: center;
+  border-radius: 1rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 12rem;
+  padding: 0.5rem;
+}
+.mediaIcons {
+  width: 2.5rem;
+}
+#mediaIconsCont {
+  padding-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#row2 {
+  display: flex;
+  flex-direction: row;
+  width: 28.3rem;
+}
+#name {
+  margin: 0.3rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  img {
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+  }
+}
+.contPar {
+  display: flex;
+}
+#photoQuote {
+  padding: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 22.3rem;
+  background: transparent;
+  border: 1px solid #000000;
+  img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+  h4 {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  }
+}
+#education {
+    border-radius: 1rem;
+    height: 9.35rem;
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+}
