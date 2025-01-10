@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Astrophel's portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/main.js"></script>
   </head>
   <body>
     <header>
       <nav class="navigationCont">
         <ul class="navigationBar">
-          <li id="homeTab">Home</li>
-          <li id="projectsTab">Projects</li>
-          <li id="contactTab">Contact</li>
+          <li id="homeTab" class="navOpts">Home</li>
+          <li id="projectsTab" class="navOpts">Projects</li>
+          <li id="contactTab" class="navOpts">Contact</li>
+        </ul>
+        <ul id="dropdownMenu" class="navigationBar">
+          <li class="dropMenu">Language 🌐</li>
+          <ul id="menuOptions" class="">
+            <li data-lang="en" id="engOpt" class="langBtns">English</li>
+            <li data-lang="es" id="esOpt" class="langBtns">Spanish</li>
+          </ul>
         </ul>
       </nav>
     </header>
@@ -24,44 +32,78 @@
       </section>
       <section class="parentMain">
         <div class="mainCont">
-            <div class="contPar">
-                <div>
-                    <div class="bentoComp" id="who">
-                      <h3>Who am I?</h3>
-                      <p>
-                        Lorem ipsum dolor <b id="role">Full Stack Developer</b> sit amet,
-                        consectetur adipisicing elit. Nobis tempore delectus quia iste ut
-                        ipsa velit quaerat excepturi eum sed laboriosam, dolores mollitia
-                        quam illum a tempora eos aspernatur. Neque.
-                      </p>
-                    </div>
-                    <div id="row2">
-                        <div class="bentoComp" id="technologies">
-                          <h3>Technologies I have worked with</h3>
-                          <div id="mediaIconsCont">
-                              <img src="./media/html.svg" alt="html logo" class="mediaIcons"/>
-                              <img src="./media/css.svg" alt="css logo" class="mediaIcons"/>
-                              <img src="./media/js.svg" alt="js logo" class="mediaIcons"/>
-                              <img src="./media/php.svg" alt="php logo" class="mediaIcons"/>
-                              <img src="./media/py.svg" alt="python logo" class="mediaIcons"/>
-                          </div>
-                        </div>
-                        <div class="bentoComp" id="name">
-                          <img src="./media/profileImg.jpeg" alt="Thiago Martinez's image">
-                          <h2>Thiago Martinez</h2>
-                        </div>
+          <div class="contPar">
+            <div>
+              <div class="bentoComp" id="who">
+                <h3 id="whoTitle">Who am I?</h3>
+                <p id="whoDesc">
+                  Lorem ipsum dolor <b id="role">Full Stack Developer</b> sit
+                  amet, consectetur adipisicing elit. Nobis tempore delectus
+                  quia iste ut ipsa velit quaerat excepturi eum sed laboriosam,
+                  dolores mollitia quam illum a tempora eos aspernatur. Neque.
+                </p>
+              </div>
+              <div id="row2">
+                <div class="bentoComp" id="technologies">
+                  <h3>Technologies I have worked with</h3>
+                  <div id="mediaIconsCont">
+                    <img
+                      src="./media/html.svg"
+                      alt="html logo"
+                      class="mediaIcons"
+                    />
+                    <img
+                      src="./media/css.svg"
+                      alt="css logo"
+                      class="mediaIcons"
+                    />
+                    <img
+                      src="./media/js.svg"
+                      alt="js logo"
+                      class="mediaIcons"
+                    />
+                    <img
+                      src="./media/php.svg"
+                      alt="php logo"
+                      class="mediaIcons"
+                    />
+                    <img
+                      src="./media/py.svg"
+                      alt="python logo"
+                      class="mediaIcons"
+                    />
+                  </div>
+                </div>
+                <div class="bentoComp" id="name">
+                  <img
+                    src="./media/certificate.svg"
+                    alt="Thiago Martinez's IT certificates"
+                  />
+                  <h2>My certificates</h2>
                 </div>
               </div>
-              <div>
-                  <div class="bentoComp" id="photoQuote">
-                    <img src="./media/stephansquintet.webp" alt="Stephan's Quintet JWST photo">
-                    <h4>"We are star stuff which has taken its destiny into its own hands." <br>- Carl Sagan</h4>
-                  </div>
+            </div>
+            <div>
+              <div class="bentoComp" id="photoQuote">
+                <img
+                  src="./media/stephansquintet.webp"
+                  alt="Stephan's Quintet JWST photo"
+                />
+                <h4>
+                  "We are star stuff which has taken its destiny into its own
+                  hands." <br />- Carl Sagan
+                </h4>
               </div>
             </div>
+          </div>
           <div class="bentoComp" id="education">
             <h3>Education</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto iste molestias laborum, eum ab saepe tenetur praesentium dolor perspiciatis aperiam quis aspernatur deserunt doloribus rem quod natus rerum perferendis in?</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto iste molestias laborum, eum ab saepe tenetur
+              praesentium dolor perspiciatis aperiam quis aspernatur deserunt
+              doloribus rem quod natus rerum perferendis in?
+            </p>
           </div>
         </div>
       </section>

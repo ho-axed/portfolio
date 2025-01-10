@@ -587,6 +587,13 @@ html {
   border-radius: 0.5rem;
   color: #fff;
 }
+.navOpts {
+  cursor: pointer;
+  transition: .3s ease;
+}
+.navOpts:hover {
+  background-color: #3d638c;
+}
 .parentMain {
   width: 100%;
   display: flex;
@@ -652,8 +659,11 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 20rem;
+  background: transparent;
+  border: 1px solid #000;
+  cursor: pointer;
   img {
-    border-radius: 100%;
     width: 6rem;
     height: 6rem;
     margin: 1rem;
@@ -682,10 +692,69 @@ html {
   }
 }
 #education {
-    border-radius: 1rem;
-    height: 9.35rem;
-    h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-    }
+  border-radius: 1rem;
+  height: 9.35rem;
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
 }
+.navigationBar {
+    background-color: #2d455f;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+#dropdownMenu {
+    width: 8rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+#dropdownMenu:hover {
+    background-color: #3d638c;
+}
+
+.dropMenu {
+    position: relative;
+}
+#menuOptions {
+    list-style: none;
+    display: block;
+    position: absolute;
+    background-color: #3d638c;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    top: 2.5rem;
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+#menuOptions.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
+
+#menuOptions li {
+    padding: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#menuOptions li:hover {
+    background-color: #2d455f;
+}
+

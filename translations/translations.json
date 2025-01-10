@@ -1,0 +1,24 @@
+{
+    "en": {
+        "menuOptEng": "English",
+        "menuOptEs": "Spanish",
+        "whoTitle": "Who am I?",
+        "whoDesc": "I am Thiago Martinez a <b class='role'> Fullstack Developer </b>...",
+        "techTitle": "Technologies I have worked with",
+        "certificateBtn": "My certificates",
+        "edTitle": "Education",
+        "edText": "I studied in",
+        "quote": "'We are star stuff which has taken its destiny into its own hands. <br> - Carl Sagan'"
+    },
+    "es": {
+        "menuOptEng": "Ingles",
+        "menuOptEs": "Español",
+        "whoTitle": "¿Quién soy?",
+        "whoDesc": "Soy Thiago Martinez, un <b class='role'>Desarrollador Fullstack</b>...",
+        "techTitle": "Tecnologías con las que he trabajado",
+        "certificateBtn": "Mis certificados",
+        "edTitle": "Educación",
+        "edText": "Estudié en",
+        "quote": "'Somos polvo de estrellas que ha tomado su destino en sus propias manos. <br> - Carl Sagan'"
+    }
+}
