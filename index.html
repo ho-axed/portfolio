@@ -6,6 +6,7 @@
     <title>Astrophel's portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <script type="module" src="./js/main.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <header>
@@ -31,7 +32,7 @@
         <div id="stars3"></div>
       </section>
       <section class="parentMain">
-        <div class="mainCont">
+        <div class="mainCont active contsAll" id="homeTab">
           <div class="contPar">
             <div>
               <div class="bentoComp" id="who">
@@ -104,6 +105,53 @@
               praesentium dolor perspiciatis aperiam quis aspernatur deserunt
               doloribus rem quod natus rerum perferendis in?
             </p>
+          </div>
+          <div id="certCont">
+            <div id="pdfList">
+              <!-- PDF files will be added here -->
+            </div>
+            <div id="pdfPreviewContainer">
+              <!-- PDF files preview -->
+            </div>
+          </div>
+        </div>
+        <div class="projectsCont contsAll" id="projectsTab">
+          <div class="project">
+            <img src="./media/profileImg.jpeg" alt="">
+            <div class="proDesc">
+              <a href="https://pagina13.co" class="proTitle" target="_blank">Pagina 13 <i class='bx bx-link-external'></i></a>
+              <p class="proDescText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, possimus. Quo unde laborum quisquam rerum alias ipsa aliquid, autem provident veniam fugiat delectus modi odit labore necessitatibus omnis enim esse?</p>
+              <div class="tech">PHP</div>
+            </div>
+          </div>
+        </div>
+        <div class="contactCont contsAll" id="contactTab">
+          <div class="conForm">
+            <h3>Contact with me</h3>
+            <div class="contactBtns">
+              <div class="contactBtn">
+                <a href="https://github.com/ho-axed" target="_blank" rel="noopener noreferrer">
+                  <img src="./media/github-mark.svg" alt="">
+                  <p id="gProf">Github Profile</p>
+                  <p id="gProfDesc">Find more of my repositories</p>
+                </a>
+              </div>
+              <div class="contactBtn">
+                <a href="https://www.linkedin.com/in/thiago-martinez-102860346/" target="_blank" rel="noopener noreferrer">
+                  <img src="./media/LinkedIn_icon.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <h4>You can also get in touch with me through this form below</h4>
+            <form id="contactForm">
+              <p id="Fname">Name</p>
+              <input type="text" name="Fname" id="formName" placeholder="e. g. John Doe">
+              <p id="Fsub">Subject</p>
+              <input type="text" name="Fsub" id="formSub" placeholder="e. g. Inquiry about Services">
+              <p id="Fmessage">Message</p>
+              <input type="text" name="Fmsg" id="formMsg" placeholder="Enter your message here">
+              <button type="submit" id="submitBtn">Send Message</button>
+            </form>
           </div>
         </div>
       </section>
