@@ -38,9 +38,24 @@ document
 
     window.location.href = mailtoLink;
   });
-document.querySelector("#name").addEventListener("click", ()=> {
-  document.querySelector("#certCont").classList.add("active")
-})
+  document.querySelector("#name").addEventListener("click", (event) => {
+    event.stopPropagation(); 
+    document.querySelector("#certCont").classList.add("active");
+  });
+  
+  document.addEventListener("click", (event) => {
+    const certCont = document.querySelector("#certCont");
+    const isClickInside = certCont.contains(event.target);
+    const isClickOnTrigger = event.target.id === "name"; 
+  
+    if (!isClickInside && !isClickOnTrigger && certCont.classList.contains("active")) {
+      certCont.classList.remove("active");
+    }
+  });
+  document.querySelector(".cloCerCont").addEventListener("click", ()=> {
+    event.stopPropagation(); 
+    document.querySelector("#certCont").classList.remove("active");
+  })
 // PDF files in the system
 const pdfFiles = [
   {
